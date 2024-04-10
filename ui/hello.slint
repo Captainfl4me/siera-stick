@@ -1,0 +1,20 @@
+import { VerticalBox } from "std-widgets.slint";
+export component MainUI inherits Window {
+    width: 128px;
+    height: 64px;
+    background: white;
+
+    VerticalBox {
+        alignment: center;
+        spacing: 4px;
+
+        Image {
+            source: @image-url("./siera_logo.png");
+        }
+        Text {
+            horizontal-alignment: center;
+            text: "ROBOTS - DRONES";
+            font-size: 12px;
+        }
+    }
+}
